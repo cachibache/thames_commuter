@@ -21,13 +21,20 @@ class BoatsController < ApplicationController
   end
 
   def edit
+    @boat = Boat.find(params[:id])
   end
 
   def update
-    
+    @boat = Boat.find(params[:id])
+    if @boat.update_attributes(params[:boat])
+      redirect_to @boat
+    else
+      render :edit
+    end
   end
 
   def destroy
-    
+    @boat = Boat.find(params[:id]).delete
+    redirect_to boats_path
   end
 end

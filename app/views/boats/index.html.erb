@@ -4,8 +4,12 @@
 
 <ul>
 <% @boats.each do |boat| %>
-  <li><%= link_to boat.name, boat %></li>
+  <li>
+    <%= link_to boat.name, boat %> 
+    <%= link_to "Edit", edit_boat_path(boat), class: "btn" %>
+    <%= link_to "Delete", boat, method: :delete, confirm: "Do you really want to delete #{boat.name}?", class: "btn btn-warning" %>
+  </li>
 <% end %>
-</ul>
+</ul><br/>
 
 <%= link_to "Add your Boat", new_boat_path, class: "btn" %>

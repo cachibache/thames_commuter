@@ -1,2 +1,12 @@
-<h1>Boats#edit</h1>
-<p>Find me in app/views/boats/edit.html.erb</p>
+<h1>Update your Boat's Details</h1>
+
+<p>Please update details of your boat here</p>
+
+<%= form_for @boat do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.submit class: "btn btn-primary" %>
+<% end %>
+
+<%= link_to "Back to all Boats", boats_path, class: "btn" %>
