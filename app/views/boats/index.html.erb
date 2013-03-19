@@ -1,6 +1,11 @@
 <h1>All Boats (hopefully floating!)</h1>
 <p>Here's a lits of all the boats available</p>
 
+
+<ul>
 <% @boats.each do |boat| %>
- <%= link_to boat.name, boat %>
+  <li><%= link_to boat.name, boat %></li>
 <% end %>
+</ul>
+
+<%= link_to "Add your Boat", new_boat_path, class: "btn" %>
