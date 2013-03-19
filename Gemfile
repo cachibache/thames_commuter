@@ -41,3 +41,14 @@ end
 
 # To use debugger
 gem 'debugger'
+
+group :development do
+  gem 'guard'
+  gem 'guard-livereload', :require => false
+  gem 'rack-livereload'
+  # gem 'yajl-ruby'
+  # Added for Guard
+  gem 'rb-inotify', :require => false
+  gem 'rb-fsevent', :require => false
+  gem 'rb-fchange', :require => false 
+end
