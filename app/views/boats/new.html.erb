@@ -1,0 +1,10 @@
+<h1>Add your Floating Boat</h1>
+
+<p>Please add details of your boat here</p>
+
+<%= form_for @boat do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.submit %>
+<% end %>

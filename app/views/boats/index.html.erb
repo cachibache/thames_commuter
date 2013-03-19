@@ -1,0 +1,6 @@
+<h1>All Boats (hopefully floating!)</h1>
+<p>Here's a lits of all the boats available</p>
+
+<% @boats.each do |boat| %>
+ <%= link_to boat.name, boat %>
+<% end %>
