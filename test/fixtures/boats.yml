@@ -1,9 +1,6 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-one:
-  name: MyString
-  slug: MyString
+# one:
+#   name: 'I is Geeky'
+#   slug: 'i-is-geeky'
 
-two:
-  name: MyString
-  slug: MyString

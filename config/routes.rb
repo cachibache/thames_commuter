@@ -1,5 +1,7 @@
 ThamesCommute::Application.routes.draw do
 
+  match '/boats/:id' => 'boats#show', :constraints => { :id => /\d+/ }
+  match '/boats/:slug' => 'boats#show'
   resources :boats
 
   match '/help', :to => 'static_pages#help'

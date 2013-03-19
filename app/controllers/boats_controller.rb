@@ -4,7 +4,8 @@ class BoatsController < ApplicationController
   end
 
   def show
-    @boat = Boat.find(params[:id])
+    @boat = Boat.find_by_id(params[:id]) || Boat.find_by_slug(params[:slug])
+    raise ActiveRecord::RecordNotFound if @boat.nil?
   end
 
   def new
