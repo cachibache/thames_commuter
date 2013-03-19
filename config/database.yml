@@ -7,7 +7,13 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: thames_commuter
+  database: thames_commuter_development
+  host: localhost
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: thames_commuter_test
   host: localhost
 
 # Warning: The database defined as "test" will be erased and
