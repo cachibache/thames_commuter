@@ -21,4 +21,8 @@ class BoatsControllerTest < ActionController::TestCase
   #   assert_response :success
   # end
 
+  test "we find the right boat by slug" do
+    get ""
+  end
+
 end
