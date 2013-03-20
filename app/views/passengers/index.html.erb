@@ -1,0 +1,15 @@
+<h1>All Passengers (hopefully not floating!)</h1>
+<p>Here's a lits of all passengers</p>
+
+
+<ul>
+<% @passengers.each do |passenger| %>
+  <li>
+    <%= link_to passenger.name, passenger %> 
+    <%= link_to "Edit", edit_passenger_path(passenger), class: "btn" %>
+    <%= link_to "Delete", passenger, method: :delete, confirm: "Do you really want to delete #{passenger.name}?", class: "btn btn-warning" %>
+  </li>
+<% end %>
+</ul><br/>
+
+<%= link_to "Add your Passenger", new_passenger_path, class: "btn" %>
