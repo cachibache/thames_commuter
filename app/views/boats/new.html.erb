@@ -2,11 +2,7 @@
 
 <p>Please add details of your boat here</p>
 
-<%= form_for @boat do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-
-  <%= f.submit class: "btn btn-primary" %>
-<% end %>
+<%= render 'form' %>
+<br/>
 
 <%= link_to "Back", boats_path, class: "btn" %>
