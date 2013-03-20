@@ -7,7 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-boats = Boat.create([ { name: "Johns Boat", slug: "johns-boat"}, 
+boats = Boat.create!([ { name: "Johns Boat", slug: "johns-boat"}, 
   { name: "Lady Marmaduke", slug: "lady-marmaduke"},
   { name: "Sarah-Jane", slug: "sarah-jane"},
   { name: "lazy lizzie", slug: "lazy-lizzie"},
