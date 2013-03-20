@@ -1,10 +1,10 @@
 class Boat < ActiveRecord::Base
   attr_accessible :name
 
-  before_save :generate_slug
+  before_validation :generate_slug
 
-  # validates_presence_of :name
-  # validates_presence_of :slug
+  validates_presence_of :name
+  validates_presence_of :slug
 
   private
 
