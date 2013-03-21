@@ -10,7 +10,8 @@ ThamesCommute::Application.routes.draw do
   get '/about', :to => 'static_pages#about'
   get '/contact', :to => 'static_pages#contact'
 
-  get '/login', :to => 'users#new'
+  # get '/login', :to => 'users#new'
+  get '/registration', :to => 'users#new'
 
   root :to => 'static_pages#home'
 
