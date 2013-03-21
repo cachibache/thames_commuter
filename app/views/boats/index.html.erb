@@ -1,15 +1,16 @@
 <h1>All Boats (hopefully floating!)</h1>
-<p>Here's a lits of all the boats available</p>
+<p>Here's a list of all the boats available:</p>
+<br />
 
 
 <ul>
 <% @boats.each do |boat| %>
   <li>
-    <%= link_to boat.name, boat %> 
-    <%= link_to "Edit", edit_boat_path(boat), class: "btn" %>
-    <%= link_to "Delete", boat, method: :delete, confirm: "Do you really want to delete #{boat.name}?", class: "btn btn-warning" %>
+    <div id="name-container"><%= link_to boat.name, boat, class: "name-links" %></div>
+    <div id="button-container"><%= link_to "Edit", edit_boat_path(boat), class: "btn" %>
+    <%= link_to "Delete", boat, method: :delete, confirm: "Do you really want to delete #{boat.name}?", class: "btn btn-warning" %></div>
   </li>
 <% end %>
 </ul><br/>
 
-<%= link_to "Add your Boat", new_boat_path, class: "btn" %>
+<%= link_to "Add your Boat", new_boat_path, class: "btn btn-add" %>

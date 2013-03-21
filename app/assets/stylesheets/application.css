@@ -14,15 +14,25 @@
 body {
   background-color: powderblue;
   margin: 30px 100px;
+  font-family: baskerville;
 }
 
 header {
   height: 300px;
   max-width: 1200px;
   margin: auto;
-  background-color: steelblue;
+  background-color: navy;
   border-radius: 8px;
 
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+p {
+  font-size: 20px;
 }
 
 #main-boat {
@@ -38,18 +48,20 @@ header {
 }
 
 #head-p {
-  font-family: baskerville;
   font-size: 42px;
   color: seashell;
 }
 
 #anchor {
-  padding-right: 30px;
+  padding-right: 78px;
 }
 
 nav ul{
   text-align: center;
   margin-top: 0;
+  padding-bottom: -20px;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 nav ul li {
@@ -57,7 +69,6 @@ nav ul li {
   height: 35px;
   width: 300px;
   background-color: steelblue;
-  font-family: baskerville;
   font-size: 20px;
   text-align: center;
   border-radius: 8px;
@@ -65,10 +76,80 @@ nav ul li {
 
 }
 
-a {
+.nav-links {
   text-decoration: none;
-  }
-
-a.hover {
-  color: red;
+  color: seashell;
+  font-family: baskerville;
+  font-size: 22px;
 }
+
+
+// debug params for dev
+.debug_dump {
+  border: 1px solid blue;
+  background-color: yellow;
+  padding: 5px;
+  margin: 20px 0;
+}
+
+.container{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: darkslateblue;
+  padding-left: 30px;
+}
+
+
+div ul li {
+  height: 40px;
+  list-style-type: none;
+}
+
+.name-links {
+  font-weight: bold;
+  color: darkslateblue;
+  font-size: 22px;
+  text-decoration: none;
+
+}
+
+.name-links:hover {
+  color: orangered;
+}
+
+
+#name-container {
+  display: inline-block;
+  width: 400px;
+}
+
+#button-container {
+  display: inline-block;
+  width: 400px;
+}
+
+footer {
+  height: 45px;
+  max-width: 1200px;
+  margin: auto;
+  background-color: navy;
+  border-radius: 8px;
+  padding-right: 15px;
+}
+
+footer p {
+  color: seashell;
+  font-size: 14px;
+  float: right;
+
+}
+
+.show-name {
+  font-size: 18px;
+}
+
+.edit {
+  font-family: baskerville;
+}
+
+.edit p {}

@@ -1,0 +1,33 @@
+.btn {
+  border: 1px solid none;
+  border-radius: 15px;
+  background-color: midnightblue;
+  font-family: baskerville;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 15px;
+  margin: 2px;
+}
+
+.btn-primary {
+  background-color: green;
+}
+
+.btn-warning {
+  background-color: firebrick;
+}
+
+.btn-add {
+  background-color: seagreen;
+}
+
+.boat-names {
+  font-weight: bold;
+  color: darkslateblue;
+
+}
+
+.boat-names:hover {
+  color: orangered;
+}
