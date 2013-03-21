@@ -1,0 +1,15 @@
+<h1>All Users</h1>
+<p>Here's a lits of all users</p>
+
+
+<ul>
+  <% @users.each do |user| %>
+    <li>
+      <%= link_to user.name, user %> 
+      <%= link_to "Edit", edit_user_path(user), class: "btn" %>
+      <%= link_to "Delete", user, method: :delete, confirm: "Do you really want to delete #{user.name}?", class: "btn btn-warning" %>
+    </li>
+  <% end %>
+</ul><br/>
+
+<%= link_to "Add your User", new_user_path, class: "btn" %>

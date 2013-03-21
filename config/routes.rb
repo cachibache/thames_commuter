@@ -5,6 +5,7 @@ ThamesCommute::Application.routes.draw do
   # get '/boats/:slug' => 'boats#show', :constraints => { :slug => /(?!new).+/}
   resources :boats
   resources :passengers
+  resources :users
 
   get '/help', :to => 'static_pages#help'
   get '/about', :to => 'static_pages#about'
@@ -12,6 +13,9 @@ ThamesCommute::Application.routes.draw do
 
   # get '/login', :to => 'users#new'
   get '/registration', :to => 'users#new'
+  post '/registration', :to => 'users#create'
+
+  put '/registration/:id', :to => 'users#update'
 
   root :to => 'static_pages#home'
 

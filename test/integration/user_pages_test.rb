@@ -8,18 +8,19 @@ class UserPagesTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "registration page" do
+  # test "registration page" do
 
-    subject { :page }
+  #   # subject { :page }
 
-    visit ('/registration')
-    fill_in('email', :with => 'BobsyourUncle')
-    click_button('Register')
+  #   visit ('/registration')
+  #   # fill_in('email', :with => 'bobsyouruncle@gmail.com')
+  #   # fill_in('name',  :with => 'BobsyourUncle')
+  #   click_button('Register')
 
-    # assert page.has
+  #   assert_redirected_to user_path(assigns(:user))
+  #   assert_equal "Welcome, you have successfully registered to use 'Float my Boat'", flash[:notice]
 
-  end
-
+  # end
 
   # test "login and browse site" do
   #   # login via https
@@ -28,5 +29,13 @@ class UserPagesTest < ActionDispatch::IntegrationTest
   #   assert_response :success
   # end
 
+  test "registration pages" do
+    get "/registration"
+    assert_response :success
 
+    post_via_redirect "/login", :name => user(:avs).name, :email => user(:avs).email
+    assert_equal '/welcome', path
+    assert_equal 'Welcome avs!', flash[:notice]
+
+  end
 end

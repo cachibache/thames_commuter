@@ -7,8 +7,9 @@
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #  name       :string(255)
+#  password   :string(255)
 #
 
 class User < ActiveRecord::Base
-  attr_accessible :email, :name
+  attr_accessible :email, :name, :password
 end
