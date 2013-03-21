@@ -58,5 +58,10 @@ module ThamesCommute
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    # Factory_Girl_Rails configuration to override Fixtures
+    config.generators do |g|
+      g.fixture_replacement :factory_girl, :dir => "test/factories"
+    end
   end
 end
