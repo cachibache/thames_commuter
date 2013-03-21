@@ -29,6 +29,12 @@ end
 
 group :development, :test do
   gem 'factory_girl_rails'
+  gem 'capybara'
+  gem 'launchy'
+end
+
+group :tools do
+  gem 'guard-test'
 end
 
 # To use ActiveModel has_secure_password
