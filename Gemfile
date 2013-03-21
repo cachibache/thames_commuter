@@ -29,8 +29,9 @@ end
 
 group :development, :test do
   gem 'factory_girl_rails'
-  gem 'capybara'
+  gem 'test-unit-capybara'
   gem 'launchy'
+  gem 'database_cleaner'
 end
 
 group :tools do
