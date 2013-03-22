@@ -6,6 +6,11 @@
 <ul>
 <% @boats.each do |boat| %>
   <li>
+    <div id="img-container">
+      <% if boat.image %>
+        <img src="/assets/<%= boat.image %>"/>
+      <% end %>
+    </div>
     <div id="name-container"><%= link_to boat.name, boat, class: "name-links" %></div>
     <div id="button-container"><%= link_to "Edit", edit_boat_path(boat), class: "btn" %>
     <%= link_to "Delete", boat, method: :delete, confirm: "Do you really want to delete #{boat.name}?", class: "btn btn-warning" %></div>

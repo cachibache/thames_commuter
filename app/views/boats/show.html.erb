@@ -1,6 +1,12 @@
 <h1>'<%= @boat.name%>'</h1>
 <p>Here are the details for your boat:</p>
 
-<div class: "name-links"><%= @boat.name %></div><br/>
+ <div id="img-show">
+      <% if @boat.image %>
+        <img src="/assets/<%= @boat.image %>"/>
+      <% end %>
+    </div>
+
+<div class: "name-links"><%= @boat.name, id= %></div><br/>
 
 <%= link_to "All Boats", boats_path, class: "btn" %>

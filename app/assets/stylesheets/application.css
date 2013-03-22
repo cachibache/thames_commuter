@@ -14,7 +14,7 @@
 body {
   background-color: powderblue;
   margin: 30px 100px;
-  font-family: baskerville;
+  font-family: 'Open Sans', sans-serif;
 }
 
 header {
@@ -50,16 +50,19 @@ p {
 #head-p {
   font-size: 42px;
   color: seashell;
+  margin-bottom: 10px;
+  padding-right: 15px;
 }
 
 #anchor {
   padding-right: 78px;
+  padding-left: 10px;
 }
 
 nav ul{
   text-align: center;
   margin-top: 0;
-  padding-bottom: -20px;
+  /*padding-bottom: -20px;*/
   margin-bottom: 0;
   padding-left: 0;
 }
@@ -79,7 +82,7 @@ nav ul li {
 .nav-links {
   text-decoration: none;
   color: seashell;
-  font-family: baskerville;
+  font-family: 'Open Sans', sans-serif;
   font-size: 22px;
 }
 
@@ -95,14 +98,19 @@ nav ul li {
 .container{
   padding-top: 50px;
   padding-bottom: 50px;
+  background-color: whitesmoke;
   color: darkslateblue;
   padding-left: 30px;
 }
 
 
 div ul li {
-  height: 40px;
+  height: 120px;
   list-style-type: none;
+}
+
+li > div {
+  vertical-align: top;
 }
 
 .name-links {
@@ -117,6 +125,16 @@ div ul li {
   color: orangered;
 }
 
+#img-container {
+  display: inline-block;
+  width: 170px;
+  height: 50px;
+}
+
+#img-container img {
+  width: 150px;
+  height: 100px;
+}
 
 #name-container {
   display: inline-block;
